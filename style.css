@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.pomodoro-container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 500px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #ff6347;
+    margin-bottom: 30px;
+}
+
+.timer-box {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #fc466b, #3f5efb);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+#pause {
+    background: linear-gradient(135deg, #30cfd0, #330867);
+}
+
+#pause:hover {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+}
+
+#reset {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+#reset:hover {
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+}
